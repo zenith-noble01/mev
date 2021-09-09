@@ -1,0 +1,105 @@
+.topbar {
+  background: white;
+  height: 60px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 999;
+  position: sticky;
+  top: 0;
+}
+
+.topbarLinks {
+  display: flex;
+}
+.topbarLeft {
+  display: flex;
+  align-items: center;
+}
+.topbarLeft h3 {
+  color: black;
+}
+.topbarLeft img {
+  width: 40px;
+  margin-right: 5px;
+}
+
+.myabout {
+  text-decoration: none;
+  color: black;
+}
+.topbarRightLinks {
+  display: flex;
+  margin: 0 10px;
+  list-style: none;
+  cursor: pointer;
+  padding: 8px 20px;
+  transition: 0.5s ease;
+  color: black;
+}
+
+.topbarRightLinks:hover {
+  background: black;
+  color: white;
+}
+
+.topbarLeft {
+  cursor: pointer;
+}
+
+.topbarProfilePic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.topbarMenuIcon {
+  display: none;
+}
+
+.fa {
+  color: white;
+  font-size: 20px;
+}
+
+@media (max-width: 700px) {
+  .topbarLinks {
+    display: none;
+  }
+
+  .topbarLinks__Moblie {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    background: white;
+    left: 0;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+  }
+
+  .topbarMenuIcon {
+    display: block;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    background: red;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+  }
+  .topbarRightLinks {
+    text-align: center;
+    padding: 20px;
+  }
+  .topbarProfile {
+    display: none;
+  }
+}
